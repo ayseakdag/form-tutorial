@@ -27,6 +27,27 @@
     <form>
 
 
+        <div class="mb-3">
+            <label for="ad" class="form-label">Ad</label>
+            <input type="text" class="form-control" id="ad" placeholder="name">
+        </div>
+        <div class="mb-3">
+            <label for="soyad" class="form-label">Soyad</label>
+            <input type="text" class="form-control" id="soyad" placeholder="surname">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="tc kimlik" class="form-label">Tc Kimlik</label>
+            <input type="text" class="form-control" id="tckimlik" maxlength="11" placeholder="tc kimlik">
+        </div>
+
+        <div class="mb-3">
+            <label for="dogum" class="form-label">Doğum Tarihi</label>
+            <input type="text" class="form-control" id="dogum">
+        </div>
 
 
 
@@ -192,25 +213,27 @@
 <input type=" submit" value="" submit>
         </div>
         <td>
-            <table class="list" id="List">
+            <table class="table table-info">
+
+
                 <thead>
                     <tr>
-                        <th>Ad</th>
-                        <th>Soyad</th>
-                        <th>Email</th>
-                        <th>Tc Kimlik</th>
-                        <th>Doğum Tarihi
+                        <th scope="col">Ad</th>
+                        <th scope="col">Soyad</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Tc Kimlik</th>
+                        <th scope="col">Doğum Tarihi
                         <th>
-                        <th>il
+                        <th scope="col">il
                         <th>
-                        <th>İlce
+                        <th scope="col">İlce
                         <th>
-                        <th>Adres
+                        <th scope="col">Adres
                         <th>
                         <th></th>
                     </tr>
                 </thead>
-
+            </table>
 
 
 
