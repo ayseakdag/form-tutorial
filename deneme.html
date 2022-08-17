@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>add2, world!</title>
 </head>
@@ -21,32 +22,40 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
-
+    <div class="deneme">javaScript</div>
     <form>
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px; ">
             <label for="ad" class="form-label">Ad</label>
             <input type="text" class="form-control" id="ad" name="ad" placeholder="name" />
+
+
         </div>
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px; ">
             <label for="soyad" class="form-label">Soyad</label>
             <input type="text" class="form-control" id="soyad" name="soyad" placeholder="surname" />
         </div>
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" />
+            <input type="email" class="form-control" id="exampleInputemail" aria-describedby="email" name="email"
+                placeholder="name@example.com" />
+            <div id="email" class="form-text">
+                <We'll never share your email with anyone else.>
+                    </We>
+            </div>
+
         </div>
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
             <label for="tc kimlik" class="form-label">Tc Kimlik</label>
             <input type="text" class="form-control" id="tckimlik" name="tckimlik" maxlength="11"
                 placeholder="tc kimlik" />
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
             <label for="dogum" class="form-label">Doğum Tarihi</label>
             <input type="text" class="form-control" id="dogum" name="dogum" />
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 ml-3 p-3 mx-auto" style="width: 400px;">
             <label class="form-label">İl</label>
             <select id="il" class="form-select form-control" name="il">
                 <option selected>İl seçiniz</option>
@@ -55,42 +64,49 @@
                 <option value="41">Kocaeli</option>
             </select>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 ml-3 p-3 mx-auto" style="width: 400px;">
             <label for="ilce" class="form-label">İlçe</label>
             <select id="ilce" name="ilce" class="form-select form-control" aria-label="Default select example"></select>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
             <label for="adres" class="form-label">Adres</label>
             <input type="adres" class="form-control" id="adres" name="adres" placeholder="adres" />
         </div>
 
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault1" value="kadin" />
-            <label class="form-check-label" for="flexRadioDefault1"> Kadın </label>
-        </div>
+        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+            <label for="cinsiyet" class="form-label">Cinsiyet</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault1" value="kadin" />
+                <label class="form-check-label" for="flexRadioDefault1"> Kadın </label>
+            </div>
 
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault2" value="erkek" />
-            <label class="form-check-label" for="flexRadioDefault2"> Erkek </label>
-        </div>
-        <p>İlgi alanları:</p>
-        <label for="c1">
-            <input type="checkbox" name="alan" value="Müzik" id="c1" />Müzik</label>
-        <label for="c2"><input type="checkbox" name="alan" value="resim" id="c2" /> Resim</label>
-        <label for="c3"><input type="checkbox" name="alan" value="Spor" id="c3" />Spor</label>
-        <p></p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault2" value="erkek" />
+                <label class="form-check-label" for="flexRadioDefault2"> Erkek </label>
+            </div>
+            <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;"></div>
+            <p>İlgi alanları:</p>
+            <label for="c1">
+                <input type="checkbox" name="alan" value="Müzik" id="c1" />Müzik</label>
+            <label for="c2"><input type="checkbox" name="alan" value="resim" id="c2" /> Resim</label>
+            <label for="c3"><input type="checkbox" name="alan" value="Spor" id="c3" />Spor</label>
+            <p></p>
 
-        <input class="form-control" type="file" id="formFile" name="dosya" />
-        <button type="submit">Gönder</button>
+
+            <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;"></div>
+            <input class="form-control" type="file" id="formFile" name="dosya" />
+            <div class="mb-3 ml-3 p-3"></div>
+            <button type="submit">Gönder</button>
     </form>
 
 
 
     <button id="kaydet">Kaydet</button>
     <button id="temizle">Temizle</button>
+    <div class="mb-3 ml-3 p-3" mx-auto" style="width: 400px;></div>
 
-    <div class="form action buttons"></div>
+    <div class=" form action buttons"></div>
     <td>
         <table class="list" id="List">
             <thead>
