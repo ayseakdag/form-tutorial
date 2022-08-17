@@ -22,40 +22,36 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
-    <div class="deneme">javaScript</div>
     <form>
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px; ">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px; ">
             <label for="ad" class="form-label">Ad</label>
             <input type="text" class="form-control" id="ad" name="ad" placeholder="name" />
 
 
         </div>
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px; ">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px; ">
             <label for="soyad" class="form-label">Soyad</label>
             <input type="text" class="form-control" id="soyad" name="soyad" placeholder="surname" />
         </div>
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputemail" aria-describedby="email" name="email"
                 placeholder="name@example.com" />
-            <div id="email" class="form-text">
-                <We'll never share your email with anyone else.>
-                    </We>
-            </div>
+
 
         </div>
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;">
             <label for="tc kimlik" class="form-label">Tc Kimlik</label>
             <input type="text" class="form-control" id="tckimlik" name="tckimlik" maxlength="11"
                 placeholder="tc kimlik" />
         </div>
 
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;">
             <label for="dogum" class="form-label">Doğum Tarihi</label>
             <input type="text" class="form-control" id="dogum" name="dogum" />
         </div>
 
-        <div class="col-md-6 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="col-md-6 ml-3 mb-3 p-2 mx-auto" style="width: 400px;">
             <label class="form-label">İl</label>
             <select id="il" class="form-select form-control" name="il">
                 <option selected>İl seçiniz</option>
@@ -64,188 +60,203 @@
                 <option value="41">Kocaeli</option>
             </select>
         </div>
-        <div class="col-md-6 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="col-md-6 ml-3 mb-3 p-2 mx-auto" style="width: 400px;">
             <label for="ilce" class="form-label">İlçe</label>
             <select id="ilce" name="ilce" class="form-select form-control" aria-label="Default select example"></select>
         </div>
 
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;">
             <label for="adres" class="form-label">Adres</label>
             <input type="adres" class="form-control" id="adres" name="adres" placeholder="adres" />
         </div>
 
-        <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;">
+        <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;">
             <label for="cinsiyet" class="form-label">Cinsiyet</label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault1" value="kadin" />
+                <input class="form-check-input" type="radio" name="cinsiyet" checked value="kadin" />
                 <label class="form-check-label" for="flexRadioDefault1"> Kadın </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="cinsiyet" id="flexRadioDefault2" value="erkek" />
+                <input class="form-check-input" type="radio" name="cinsiyet" value="erkek" />
                 <label class="form-check-label" for="flexRadioDefault2"> Erkek </label>
             </div>
-            <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;"></div>
+            <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;"></div>
             <p>İlgi alanları:</p>
             <label for="c1">
-                <input type="checkbox" name="alan" value="Müzik" id="c1" />Müzik</label>
+                <input type="checkbox" name="alan" value="Müzik" id="c1" checked />Müzik</label>
             <label for="c2"><input type="checkbox" name="alan" value="resim" id="c2" /> Resim</label>
             <label for="c3"><input type="checkbox" name="alan" value="Spor" id="c3" />Spor</label>
             <p></p>
 
 
-            <div class="mb-3 ml-3 p-3 mx-auto" style="width: 400px;"></div>
+            <!--      <div class="mb-3 ml-3 p-2 mx-auto" style="width: 400px;"></div>
             <input class="form-control" type="file" id="formFile" name="dosya" />
-            <div class="mb-3 ml-3 p-3"></div>
-            <button type="submit">Gönder</button>
+            <div class="mb-3 ml-3 p-2"></div> -->
+            <button class="btn btn-primary" type="submit">Gönder</button>
     </form>
 
 
 
-    <button id="kaydet">Kaydet</button>
-    <button id="temizle">Temizle</button>
-    <div class="mb-3 ml-3 p-3" mx-auto style="width: 400px;"></div>/div>
+    <button class="btn btn-danger" id="temizle">Temizle</button>
+    <div class="mb-3 ml-3 p-2" mx-auto style="width: 400px;"></div>
 
     <div class=" form action buttons"></div>
-    <td>
-        <table class="list" id="List">
-            <thead>
-                <tr>
-                    <th>Ad</th>
-                    <th>Soyad</th>
-                    <th>Email</th>
-                    <th>Tc Kimlik</th>
-                    <th>Doğum Tarihi</th>
-                    <th>il</th>
-                    <th>İlce</th>
-                    <th>Adres</th>
-                    <th>Cinsiyet</th>
-                    <th>İlgi</th>
-                    <th>Dosya</th>
-                </tr>
-            </thead>
-        </table>
-        <script>
-            var dateMask = IMask(document.getElementById("dogum"), {
-                mask: Date,
-                min: new Date(1990, 0, 1),
-                max: new Date(2020, 0, 1),
-                lazy: false,
+    <table class="table table-striped" id="List">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Email</th>
+                <th>Tc Kimlik</th>
+                <th>Doğum Tarihi</th>
+                <th>il</th>
+                <th>İlce</th>
+                <th>Adres</th>
+                <th>Cinsiyet</th>
+                <th>İlgi</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        var dateMask = IMask(document.getElementById("dogum"), {
+            mask: Date,
+            min: new Date(1990, 0, 1),
+            max: new Date(2020, 0, 1),
+            lazy: false,
+        });
+
+        /*        const btn = document.querySelector("#btn");
+        btn.addEventListener("click", (event) => {
+          let checkboxes = document.querySelectorAll(
+            'input[name="alan"]:checked'
+          );
+          let values = [];
+          checkboxes.forEach((checkbox) => {
+            values.push(checkbox.value);
+          });
+          alert(values);
+        }); */
+
+        let Kocaeli = [
+            "Gebze",
+            "Gölcük",
+            "Kandıra",
+            "Karamürsel",
+            "Körfez",
+            "Derince",
+            "Başiskele",
+            "Çayırova",
+            "Darıca",
+            "Dilovası",
+            "İzmit",
+            "Kartepe",
+        ];
+        let Aydin = [
+            "Nazilli",
+            "Söke",
+            "Sultanhisar",
+            "Yenipazar",
+            "Buharkent",
+            "İncirliova",
+            "Karpuzlu",
+            "Köşk",
+            "Didim",
+        ];
+
+        let İstanbul = [
+            "Eyüp",
+            "Fatih",
+            "Gaziosmanpaşa",
+            "Kadıköy",
+            "Kartal",
+            "Sarıyer",
+            "Silivri",
+            "Şile",
+            "Şişli",
+            "Üsküdar",
+            "Zeytinburnu",
+        ];
+
+        let obj = {
+            "09": Aydin,
+            41: Kocaeli,
+            34: İstanbul,
+        };
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const data = new FormData(event.target);
+
+            const mydata = Object.fromEntries(data.entries());
+            console.log("🚀 ~ file: deneme.html ~ line 197 ~ handleSubmit ~ mydata", mydata)
+            let table = document.getElementById("List").tBodies[0]
+            let tabletr = document.createElement("tr");
+            Object.entries(mydata).forEach((bilgi) => {
+                const [key, value] = bilgi;
+                let tabletd = document.createElement("td");
+                tabletd.innerText = value;
+                tabletr.appendChild(tabletd);
             });
+            table.appendChild(tabletr);
+        }
 
-            /*        const btn = document.querySelector("#btn");
-            btn.addEventListener("click", (event) => {
-              let checkboxes = document.querySelectorAll(
-                'input[name="alan"]:checked'
-              );
-              let values = [];
-              checkboxes.forEach((checkbox) => {
-                values.push(checkbox.value);
-              });
-              alert(values);
-            }); */
+        const form = document.querySelector("form");
+        form.addEventListener("submit", handleSubmit);
 
-            let Kocaeli = [
-                "Gebze",
-                "Gölcük",
-                "Kandıra",
-                "Karamürsel",
-                "Körfez",
-                "Derince",
-                "Başiskele",
-                "Çayırova",
-                "Darıca",
-                "Dilovası",
-                "İzmit",
-                "Kartepe",
-            ];
-            let Aydin = [
-                "Nazilli",
-                "Söke",
-                "Sultanhisar",
-                "Yenipazar",
-                "Buharkent",
-                "İncirliova",
-                "Karpuzlu",
-                "Köşk",
-                "Didim",
-            ];
+        let il = document.getElementById("il");
+        let temizle = document.getElementById("temizle");
+        temizle.addEventListener("click", function (event) {
+            event.preventDefault();
 
-            let İstanbul = [
-                "Eyüp",
-                "Fatih",
-                "Gaziosmanpaşa",
-                "Kadıköy",
-                "Kartal",
-                "Sarıyer",
-                "Silivri",
-                "Şile",
-                "Şişli",
-                "Üsküdar",
-                "Zeytinburnu",
-            ];
+            const data = new FormData(form);
 
-            let obj = {
-                "09": Aydin,
-                41: Kocaeli,
-                34: İstanbul,
-            };
+            const mydata = Object.fromEntries(data.entries());
 
-            function handleSubmit(event) {
-                event.preventDefault();
-
-                const data = new FormData(event.target);
-
-                const mydata = Object.fromEntries(data.entries());
-                let table = document.getElementById("List");
-                let tabletr = document.createElement("tr");
-                Object.entries(mydata).forEach((bilgi) => {
-                    const [key, value] = bilgi;
-                    let tabletd = document.createElement("td");
-                    tabletd.innerText = value;
-                    tabletr.appendChild(tabletd);
-                });
-                table.appendChild(tabletr);
-            }
-
-            const form = document.querySelector("form");
-            form.addEventListener("submit", handleSubmit);
-
-            let il = document.getElementById("il");
-            let kaydet = document.getElementById("kaydet");
-            console.log(il);
-            /*         kaydet.addEventListener("click", function () {
-             let table = document.getElementById("List");
-             let tabletr = document.createElement("tr");
-             let tabletd = document.createElement("td");
-             let tabletd1 = document.createElement("td");
-             tabletd.innerText = "bla bla";
-             tabletd1.innerText = "bla bla1";
-             tabletr.appendChild(tabletd);
-             tabletr.appendChild(tabletd1);
-             table.appendChild(tabletr);
-            }) */
-
-            function veriler(veri) { }
-
-            il.addEventListener("change", function () {
-                var ilce = document.getElementById("ilce");
-                ilce.innerText = null;
-
-                console.log(
-                    "🚀 ~ file: index.html ~ line 178 ~ this.value",
-                    this.value
-                );
-
-                obj[this.value].forEach((element) => {
-                    var option = document.createElement("option");
-                    option.text = element;
-                    option.value = element;
-                    ilce.appendChild(option);
-                });
+            Object.entries(mydata).forEach((bilgi) => {
+                const [key, value] = bilgi;
+                let ad = document.getElementsByName(key)[0];
+                ad.value = ""
+                console.log("🚀 ~ file: deneme.html ~ line 220 ~ mydata", key)
             });
-        </script>
-    </td>
+        })
+        let kaydet = document.getElementById("kaydet");
+        console.log(il);
+        /*         kaydet.addEventListener("click", function () {
+         let table = document.getElementById("List");
+         let tabletr = document.createElement("tr");
+         let tabletd = document.createElement("td");
+         let tabletd1 = document.createElement("td");
+         tabletd.innerText = "bla bla";
+         tabletd1.innerText = "bla bla1";
+         tabletr.appendChild(tabletd);
+         tabletr.appendChild(tabletd1);
+         table.appendChild(tabletr);
+        }) */
+
+        function veriler(veri) { }
+
+        il.addEventListener("change", function () {
+            var ilce = document.getElementById("ilce");
+            ilce.innerText = null;
+
+            console.log(
+                "🚀 ~ file: index.html ~ line 178 ~ this.value",
+                this.value
+            );
+
+            obj[this.value].forEach((element) => {
+                var option = document.createElement("option");
+                option.text = element;
+                option.value = element;
+                ilce.appendChild(option);
+            });
+        });
+    </script>
 </body>
 
 </html>
